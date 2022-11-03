@@ -1,0 +1,44 @@
+
+:root {
+  --first-color: #272142;
+  --second-color: #6c63ff;
+  --third-color: #f9f7fe;
+  --fourth-color: white;
+  --fifth-color: black;
+  --sixth-color:#272142;
+  --seventh-color:#6c757d;
+  --first-font:"Playfair Display", serif;
+  --second-font: "Poppins", sans-serif;
+}
+
+.logo{
+    max-height: 40px;
+    margin-left: 110px;
+  }
+  .navbar-nav{
+    font-family: var(--second-font);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 13px 0;
+  }
+  nav .nav-link{
+    color: var(--sixth-color);
+  }
+  nav .nav-link:hover{
+    color: var(--second-color);
+  }
+  #active-link{
+    color: var(--second-color);
+  }
+
+
+  @media (max-width:900px){
+
+    .logo{
+      margin-left: 40px;
+    }
+
+    .navbar{
+      padding-right: 40px;
+    }
+  }
