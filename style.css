@@ -10,11 +10,13 @@
   --second-font: "Poppins", sans-serif;
 }
 
-body {
+.generic-container {
   margin: 0 0;
   padding: 0 0;
+  width: 100%;
 }
 .wrapper,  .about-wrapper{
+  width: 100%;
   text-align: center;
   padding: 51px 67px;
 }
@@ -68,6 +70,7 @@ p {
   color: var(--first-color);
 }
 .second-wrapper {
+  width: 90%;
   padding: 0 0;
   margin: 0 67px;
 }
@@ -118,87 +121,10 @@ p {
 .my-work .img-fluid{
   margin-bottom: 16px;
 }
-#last-row{
-  padding: 0 0;
-  margin-bottom: 200px;
-}
-.third-wrapper {
-  padding: 0 0;
-  margin: 0 79px;
-}
-/* .block-work-inquiry {
-  background-color: var(--third-color);
-  border-radius: 4px;
-  padding: 49px 119px;
-  height: 200px;
-} */
-/* .work-inquiry {
-  font-family: var(--first-font);
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
-  color: var(--fifth-color);
-  padding-bottom: 4px;
-} */
-/* .work-inquiry-content {
-  font-family: var(--second-font);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: var(--first-color);
-}
-.email-link-block {
-  padding-top: 41px;
-  text-align: right;
-}
-.email-link {
-  display: inline;
-  background-color: var(--second-color);
-  padding: 18px 38px;
-  border-radius: 4px;
-}
-.email-link a {
-  font-family: var(--second-font);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  text-decoration: none;
-  color: var(--third-color);
+footer{
+  width: 90%;
   margin: 0 auto;
 }
-.email-link a:hover {
-  color: var(--first-color);
-}
-.my-email {
-  font-family: var(--second-font);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
-  text-align: center;
-  color: var(--fifth-color);
-  margin-top: 81px;
-  margin-bottom: 41px;
-} */
-
-.first-image-caption{
-  font-family: var(--second-font);
-  color: var(--fifth-color);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  margin-bottom: 9px;
-}
-.second-image-caption{
-  font-family: var(--second-font);
-  color: var(--first-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 
 footer .contact-box{
   background-color: var(--third-color);
@@ -234,8 +160,6 @@ text-decoration: none;
 cursor: pointer;
 
 }
-
-
 #github{
 padding: 10px 15px;
 }
@@ -263,9 +187,7 @@ footer .btn-branding{
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
-  
 }
-
 footer .btn-branding:hover {
   color: var(--first-color);
   background-color: var(--second-color)!important;
@@ -289,3 +211,91 @@ footer .email-link-footer:hover{
 color: var(--second-color);
 
 }
+/* for a small screens */
+@media (max-width:750px){
+  
+.second-wrapper, footer {
+  width: 90%;
+}
+.wrapper {
+  height: 600px;}
+
+  .greeting {
+    font-size: 27px;
+  }
+
+  .name {
+    font-size: 47px;
+  }
+
+  #text-about {
+    font-size: 18px;
+  }
+  .button-contact-me a {
+    font-size: 16px;
+  }
+  .second-wrapper {
+    margin: 0 40px 70px 20px;
+  }
+.row .textYogurt, .row .text-weather-column, .row .textDictionary{
+  width: 100%;
+}
+.headerDictionary,
+.headerWeather,
+.headerYogurt {
+  font-size: 47px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.content-yogurt,
+.content-dictionary,
+.content-weather{
+  margin-bottom: 50px;
+}
+
+.navigation-links-second{
+  text-align: center;
+}
+
+.contact-link {
+  padding: 18px 37px;
+  font-size: 16px;
+}
+footer .email-link-footer{
+  font-size: 16px;
+  padding: 0 0;
+  margin-bottom: 0px!important;
+}
+  .text-second-part {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  footer .contact-box h4{
+  font-size: 27px;
+  }
+}
+
+/* for a medium screens */
+@media (min-width:751px) and ( max-width:1100px ){
+  
+  .second-wrapper, footer {
+    width: 90%;
+  }
+  .wrapper {
+    height: 600px;
+    padding: 30px 0px;
+  }
+
+  .headerDictionary,
+.headerWeather,
+.headerYogurt {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.row{
+  margin-bottom: 50px;
+}
+  footer{
+    margin-top: 100px;
+  }
+  }
