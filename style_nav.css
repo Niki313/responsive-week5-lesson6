@@ -1,44 +1,88 @@
-
 :root {
   --first-color: #272142;
   --second-color: #6c63ff;
   --third-color: #f9f7fe;
   --fourth-color: white;
   --fifth-color: black;
-  --sixth-color:#272142;
-  --seventh-color:#6c757d;
-  --first-font:"Playfair Display", serif;
+  --sixth-color: #272142;
+  --seventh-color: #6c757d;
+  --first-font: "Playfair Display", serif;
   --second-font: "Poppins", sans-serif;
 }
 
-.logo{
-    max-height: 40px;
-    margin-left: 110px;
-  }
-  .navbar-nav{
-    font-family: var(--second-font);
-    font-weight: 500;
-    text-decoration: none;
-    padding: 13px 0;
-  }
-  nav .nav-link{
-    color: var(--sixth-color);
-  }
-  nav .nav-link:hover{
-    color: var(--second-color);
-  }
-  #active-link{
-    color: var(--second-color);
-  }
+.logo {
+  max-height: 40px;
+  margin-left: 110px;
+}
+.navbar-nav {
+  font-family: var(--second-font);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 13px 0;
+}
+nav .nav-link {
+  color: var(--sixth-color);
+}
+nav .nav-link:hover {
+  color: var(--second-color);
+}
+
+#active-link {
+  color: var(--second-color);
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+.navbar-nav a{
+  font-size: 18px;
+}
 
 
-  @media (max-width:900px){
 
-    .logo{
-      margin-left: 40px;
-    }
 
-    .navbar{
-      padding-right: 40px;
-    }
+@media (max-width: 300px) {
+  .logo {
+    margin-left: 10px;
+    max-height: 20px;
   }
+
+  .navbar {
+    padding-right: 40px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 5px;
+  }
+  .navbar-nav a{
+    font-size: 9px;
+  }
+}
+
+@media (min-width:301px) and (max-width: 700px) {
+  .logo {
+    margin-left: 10px;
+    max-height: 30px;
+  }
+
+  .navbar {
+    padding-right: 40px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 5px;
+  }
+  .navbar-nav a{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:701px) and (max-width: 915px) {
+  .logo {
+    margin-left: 20px;
+  }
+
+  .navbar {
+    padding-right: 40px;
+  }
+}
