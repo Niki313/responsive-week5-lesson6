@@ -10,12 +10,7 @@
   --second-font: "Poppins", sans-serif;
 }
 
-.generic-container {
-  margin: 0 0;
-  padding: 0 0;
-  width: 100%;
-}
-.wrapper,  .about-wrapper{
+.wrapper{
   width: 100%;
   text-align: center;
   padding: 51px 67px;
@@ -44,13 +39,7 @@ p {
   font-weight: 700;
   font-size: 36px;
 }
-#text-about {
-  font-family: var(--first-font);
-  color: var(--first-color);
-  font-weight: 700;
-  font-size: 24px;
-  margin: 0 auto;
-}
+
 .button-contact-me {
   display: inline;
   background-color: var(--second-color);
@@ -118,9 +107,7 @@ p {
 .img-fluid {
   margin-bottom: 70px;
 }
-.my-work .img-fluid{
-  margin-bottom: 16px;
-}
+
 footer{
   width: 90%;
   margin: 0 auto;
