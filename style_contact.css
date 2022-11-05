@@ -14,7 +14,7 @@
  
     /* for all screens */
   .container{
-    margin: 0 auto;
+    margin: 0 auto 150px auto;
     width: 100%;
 }
 .container h1{
