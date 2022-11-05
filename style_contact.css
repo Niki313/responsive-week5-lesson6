@@ -51,7 +51,7 @@
 
 /* for small screens */
 
-@media (max-width: 800px){
+@media (max-width: 600px){
 
     .logo{
         height: 30px;
@@ -71,13 +71,10 @@
 }
 }
 /* for meddium screens */
-@media (min-width: 801px) and (max-width:1100px){
+@media (min-width: 601px) and (max-width:1100px){
 
-        .container{
-          text-align: center!important;
-        }
         .container h1{
-            margin-top: 100px!important;
+            margin-top: 50px!important;
             margin-left: 0;
         }
         .contacts{
